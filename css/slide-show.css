@@ -1,0 +1,9 @@
+.content {
+    display: none;
+    transition: transform 0.1s ease-in-out;
+}
+
+.active {
+    display: inline-block;
+    transform: translateX(0);
+}

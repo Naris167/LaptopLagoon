@@ -1,0 +1,802 @@
+/* import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@font-face {
+    font-family: "Righteous";
+    src: url("../fonts/Righteous-Regular.ttf");
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+/*****
+1) font-family: 'Rajdhani', sans-serif;
+2) font-family: 'Poppins', sans-serif;
+*****/
+
+
+/*===================== global section start =====================*/
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s !important;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    color: #666666 !important;
+    font-size: 14px !important;
+    font-family: Poppins !important;
+    line-height: 1.80857 !important;
+    font-weight: normal !important;
+    overflow-x: hidden !important;
+}
+
+a {
+    color: #1f1f1f;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out !important;
+    -moz-transition: all .3s ease-in-out !important;
+    -ms-transition: all .3s ease-in-out !important;
+    -o-transition: all .3s ease-in-out !important;
+    transition: all .3s ease-in-out !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: normal;
+    color: #111111;
+    margin: 0
+}
+
+h1 {
+    font-size: 24px
+}
+
+h2 {
+    font-size: 22px
+}
+
+h3 {
+    font-size: 18px
+}
+
+h4 {
+    font-size: 16px
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #212121;
+    text-decoration: none !important;
+    opacity: 1
+}
+
+button:focus {
+    outline: none !important;
+}
+
+ul,
+li,
+ol {
+    margin: 0px !important;
+    padding: 0px !important;
+    list-style: none !important;
+}
+
+p {
+    margin: 20px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+a {
+    color: #222222;
+    text-decoration: none;
+    outline: none !important;
+}
+
+a,
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+:focus {
+    outline: 0;
+    /*Pseudo-class that remove the outline when
+    the user click on an element*/
+}
+
+.layout_padding {
+    padding-top: 90px !important;
+    padding-bottom: 0px !important;
+}
+
+.row {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+}
+
+.rounded {
+    border-radius: 0.25rem !important;
+}
+
+.float-left {
+    float: left !important;
+}
+
+.padding-top-0 {
+    padding-top: 0px !important;
+}
+
+.padding-top-50 {
+    padding-top: 50px !important;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.margin-top-0 {
+    margin-top: 0px !important;
+}
+
+.margin-top-90 {
+    margin-top: 90px !important;
+}
+
+.margin-bottom-60 {
+    margin-bottom: 30px !important;
+}
+
+.section-general {
+    width: 100%;
+    float: left;
+}
+
+.line-height-70 {
+    line-height: 70px !important;
+}
+
+.font-size-60px {
+    font-size: 60px !important;
+}
+
+
+
+
+/*===================== global section end =====================*/
+/*===================== Image box section start =====================*/
+
+.img-2 {
+    width: 100% !important;
+    float: left !important;
+}
+
+.img-map {
+    margin-bottom: 50px !important;
+}
+
+.img-founder {
+    width: 300px !important;
+    /* or any size you want */
+    height: 300px !important;
+    /* or any size you want */
+}
+
+/*===================== Image section end =====================*/
+/*===================== Text box section start =====================*/
+
+.topic-white-s {
+    width: 100% !important;
+    float: left !important;
+    font-size: 50px !important;
+    color: #fefeff !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+}
+
+.topic-white-m {
+    width: 100%;
+    float: left;
+    font-size: 58px;
+    color: #fefeff;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.topic-blue-s {
+    width: 100% !important;
+    float: left !important;
+    font-size: 50px !important;
+    color: #599ee9 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+}
+
+.topic-blue-m {
+    width: 100% !important;
+    float: left !important;
+    font-size: 65px !important;
+    color: #599ee9 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    line-height: 50px !important;
+}
+
+.topic-general-1 {
+    width: 100% !important;
+    float: left !important;
+    font-size: 50px !important;
+    color: #24292f !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+}
+
+.topic-general-2 {
+    width: 100%;
+    float: left;
+    font-size: 28px;
+    color: rgb(235, 235, 235);
+    font-weight: bold;
+    padding: 25px 0px;
+}
+
+.topic-general-3 {
+    width: 100%;
+    float: left;
+    font-size: 50px;
+    color: #2d343e;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.topic-general-4 {
+    width: 100%;
+    float: left;
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    color: #191919;
+    text-transform: uppercase;
+}
+
+.paragraph-general-1 {
+    width: 100% !important;
+    float: left !important;
+    font-size: 16px !important;
+    color: #191919 !important;
+    text-align: center !important;
+    padding-bottom: 60px !important;
+    margin-left: 0px !important;
+}
+
+.paragraph-general-2 {
+    width: 100% !important;
+    float: left !important;
+    font-size: 16px !important;
+    color: #fefeff !important;
+    font-weight: 500 !important;
+    margin-left: 0px !important;
+}
+
+.paragraph-general-3 {
+    width: 100% !important;
+    float: left !important;
+    font-size: 16px !important;
+    color: #363636 !important;
+    margin-left: 0px !important;
+    text-align: center !important;
+    margin-bottom: 100px !important;
+}
+
+.paragraph-general-4 {
+    width: 100% !important;
+    float: left !important;
+    font-size: 16px !important;
+    color: #2d343e !important;
+    margin-left: 0px !important;
+    padding-bottom: 60px !important;
+}
+
+.paragraph-product-price {
+    width: 100% !important;
+    float: left !important;
+    font-size: 30px !important;
+    color: #5ca0e9 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    padding-top: 40px !important;
+}
+
+.paragraph-product-name {
+    width: 100% !important;
+    float: left !important;
+    font-size: 30px !important;
+    color: #2d343e !important;
+    text-align: center !important;
+    font-weight: 400;
+}
+
+.paragraph-link-1 {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.paragraph-link-2 {
+    width: 100% !important;
+    font-size: 16px !important;
+    color: blue !important;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+}
+
+.paragraph-founder-name {
+    width: 100%;
+    float: left;
+    font-size: 24px;
+    color: black;
+    text-align: left;
+}
+
+.paragraph-founder-role {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #191919;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.paragraph-founder-qoute {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #191919;
+    text-align: left;
+    margin-left: 0;
+}
+
+/*===================== Text box section end =====================*/
+/*===================== Banner section start =====================*/
+
+.section-banner {
+    width: 100% !important;
+    float: left !important;
+    background-image: url(../images/banner-bg.png) !important;
+    height: 560px !important;
+    padding-bottom: 200px !important;
+    margin-bottom: 0px !important;
+    background-size: cover !important;
+}
+
+/*===================== Banner section end =====================*/
+/*===================== Product page start =====================*/
+
+.section-product {
+    width: 100% !important;
+    float: left !important;
+}
+
+.bt-center {
+    width: 17% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+/*===================== Product page end =====================*/
+/*===================== Button section start =====================*/
+
+.shop_bt {
+    width: 35% !important;
+    float: left !important;
+    font-size: 18px !important;
+    text-align: center !important;
+    background-color: #fcfcfd !important;
+    color: #191919 !important;
+    border-left: 10px solid #599ee9 !important;
+    border-radius: 30px !important;
+    border-right: 10px solid #599ee9 !important;
+    border-top: 4px solid #599ee9 !important;
+    border-bottom: 4px solid #599ee9 !important;
+    padding: 5px 0px !important;
+    margin-top: 40px !important;
+}
+
+.shop_bt a {
+    color: black !important;
+}
+
+.shop_bt a:hover {
+    color: white !important;
+}
+
+.btn-primary:hover {
+    color: #fff !important;
+    background-color: #0069d9 !important;
+    border-color: #0062cc !important;
+}
+
+.see_bt {
+    width: 100% !important;
+    float: right !important;
+    font-size: 18px !important;
+    text-align: center !important;
+    background-color: #fcfcfd !important;
+    color: #191919 !important;
+    border-left: 10px solid #599ee9 !important;
+    border-radius: 30px !important;
+    border-right: 10px solid #599ee9 !important;
+    border-top: 4px solid #599ee9 !important;
+    border-bottom: 4px solid #599ee9 !important;
+    padding: 5px 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 40px !important;
+}
+
+.see_bt a {
+    color: black !important;
+}
+
+.see_bt a:hover {
+    color: white !important;
+}
+
+.main_bt {
+    background: #ed1c24 !important;
+    border: none !important;
+    color: #faf9f9 !important;
+    width: 160px !important;
+    height: 58px !important;
+    font-size: 24px !important;
+    padding-top: 3px !important;
+    border-radius: 30px !important;
+    margin-left: 15px !important;
+    text-align: center !important;
+    padding-top: 12px !important;
+    margin-top: 40px !important;
+    margin-bottom: 80px !important;
+}
+
+.main_bt a {
+    color: white;
+}
+
+.main_bt a:hover {
+    color: black;
+}
+
+/*===================== Button section end =====================*/
+/*===================== VR page start =====================*/
+
+.section-vr {
+    width: 100% !important;
+    float: left !important;
+    background-image: url(../images/video-bg.png) !important;
+    height: auto !important;
+}
+
+/*===================== VR page end =====================*/
+/*===================== Footer section end =====================*/
+
+.section-footer {
+    width: 100%;
+    float: left;
+    background-color: rgb(41, 40, 40);
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-footer-inner {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #898989;
+    padding-bottom: 40px;
+}
+
+.legal-link {
+    width: 100%;
+    float: left;
+}
+
+.legal-link ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.legal-link li {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.legal-link li a {
+    color: #ffffff;
+}
+
+.legal-link li a:hover {
+    color: #599ee9;
+}
+
+.form-control:focus {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25) !important;
+}
+
+.subscribr_bt {
+    width: 60% !important;
+    font-size: 16pt !important;
+    color: #eceaea !important;
+    background-color: #599ee9;
+    padding: 5px 0px !important;
+    text-align: center !important;
+    margin-top: 20px !important;
+    font-weight: 600 !important;
+}
+
+.social_icon {
+    width: 19% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+.social_icon ul {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.social_icon li {
+    float: left !important;
+    padding-right: 20px !important;
+    padding-top: 40px !important;
+}
+
+/*===================== Footer section end =====================*/
+/*===================== Header section start =====================*/
+
+.logo {
+    width: 18% !important;
+    float: left !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+}
+
+.navbar {
+    padding: 20px 30px !important;
+    padding-right: 200px !important;
+    padding-left: 100px !important;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px !important;
+}
+
+.nav-fill .nav-item {
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+    text-align: center !important;
+}
+
+.nav-justified .nav-item {
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -ms-flex-positive: 1 !important;
+    flex-grow: 1 !important;
+    text-align: center !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    font-size: 18px !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #24292f !important;
+    font-weight: 500 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #4f99e5 !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #4f99e5 !important;
+}
+
+.bg-light {
+    background-color: #fefeff !important;
+    box-shadow: 0px 0px 10px 0px;
+    border-top: 45px solid #333a44;
+}
+
+a.bg-light:hover,
+a.bg-light:focus,
+button.bg-light:hover,
+button.bg-light:focus {
+    background-color: #dae0e5 !important;
+}
+
+.ml-auto,
+.mx-auto {
+    margin-left: auto !important;
+}
+
+
+/*===================== Header section end =====================*/
+/*===================== Founder section start =====================*/
+
+.box_main {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #424242;
+    padding: 40px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    display: flow-root;
+}
+
+/*===================== Founder section end =====================*/
+/*===================== About section start =====================*/
+
+.region-text-1 {
+    width: 100% !important;
+    float: left !important;
+    background-color: #f2f7fd !important;
+    height: auto !important;
+    padding-bottom: 90px !important;
+}
+
+
+
+/*===================== About section end =====================*/
+/*===================== Form section start =====================*/
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.email_box {
+    width: 100%;
+    float: left;
+    /* background-color: #ffffff; */
+    /* border-radius: 20px; */
+    height: auto;
+    /* padding: 50px 20px; */
+    /* opacity: 0.80; */
+}
+
+.email-bt {
+    color: #000000;
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    padding: 20px 20px 0px 0px;
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid #888686;
+}
+
+.massage-bt {
+    color: #000000;
+    width: 100%;
+    height: 80px;
+    font-size: 18px;
+    padding: 36px 20px 10px 0px;
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid #888686;
+}
+
+/*===================== Form section end =====================*/
+/*===================== Contact section start =====================*/
+
+.section-contact {
+    width: 100%;
+    float: left;
+    background-color: #f2f7fd;
+    height: auto;
+    padding-bottom: 90px;
+    margin-top: 90px;
+}
+
+/*===================== Contact section end =====================*/
+/*===================== Slide Show start =====================*/
+
+.button-container-prev {
+    display: flex;
+    align-items: center;
+    justify-content: right; /* This centers horizontally, you can remove it if not needed */
+}
+
+.button-container-next {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+/*===================== Slide Show end =====================*/
+/*===================== Nav Indicator start =====================*/
+
+.navbar-nav {
+    position: relative;
+}
+
+.nav-item {
+    height: 40px;  /* Adjust as per your design */
+    display: flex;
+    align-items: center;  /* Vertically center the text */
+}
+
+.indicator {
+    height: 2px;
+    background-color: #4f99e5;
+    position: absolute;
+    bottom: 25px;  /* Adjust distance from the text */
+    transition: left 0.3s ease, width 0.3s ease;
+}
+
+/*===================== Nav Indicator end =====================*/
